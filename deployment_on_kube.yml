@@ -25,7 +25,7 @@ spec:
         imagePullPolicy: Always
         name: tomcat-project
         ports:
-        - containerPort: 8080
+        - containerPort: 8090
         
 
 ---
@@ -36,8 +36,8 @@ metadata:
  
 spec:
   ports:
-  - port: 8080
-    targetPort: 8080
+  - port: 8090
+    targetPort: 8090
   
   selector:
     app: tomcat-project
