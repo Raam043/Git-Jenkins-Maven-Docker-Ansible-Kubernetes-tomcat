@@ -42,5 +42,3 @@ spec:
   selector:
     app: tomcat-project
   type: LoadBalancer
-  externalIPs:
-    - 3.20.233.40
