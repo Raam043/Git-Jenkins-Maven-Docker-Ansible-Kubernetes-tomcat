@@ -13,7 +13,7 @@
       command: "cd Git-Jenkins-Maven-Docker-Ansible-Kubernetes-tomcat"
       
     - name: Deploying manifest files
-      command: "kubectl get all"
+      command: "sudo kubectl get all"
       
     - name: Restarting the service
       command: "kubectl rollout restart deployment"
