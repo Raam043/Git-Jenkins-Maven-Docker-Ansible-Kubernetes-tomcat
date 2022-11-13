@@ -42,3 +42,4 @@ spec:
   selector:
     app: tomcat-project
   type: LoadBalancer
+  command: "kubectl rollout restart deployment"
