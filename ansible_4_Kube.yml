@@ -15,6 +15,8 @@
     - name: Deploying manifest files
       command: "kubectl apply -f deployment_on_kube.yml"
       become: yes
+      become_method: su
+      become_user: root
       
     - name: Restarting the service
       command: "kubectl rollout restart deployment"
